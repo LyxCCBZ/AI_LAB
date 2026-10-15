@@ -1,0 +1,7 @@
+﻿features,vocab_size,val_accuracy,val_macro_f1,seconds
+基准 unigram + max_features=20000,20000,0.9417,0.9417,1.7
+max_features=5000,5000,0.9206,0.9207,1.7
+"min_df=1, max_features=50000",50000,0.9417,0.9416,1.8
+"unigram+bigram (ngram_range=(1,2))",50000,0.9376,0.9379,10.6
+sublinear_tf=False（原始词频）,20000,0.9322,0.9324,3.8
+去掉邮件头与引用行,20000,0.8582,0.8586,3.8

@@ -1,0 +1,13 @@
+﻿model,params,val_accuracy,val_macro_f1,seconds
+SVM,"C=1.0, kernel=linear",0.9417,0.9417,1.1
+LR,C=10.0,0.9396,0.9397,6.7
+LR,C=50.0,0.9396,0.9398,6.0
+ENSEMBLE,members=LR+MLP+NB+SVM,0.9389,0.9393,0.0
+SVM,"C=10.0, kernel=linear",0.9369,0.9371,3.3
+MLP,"alpha=0.0001, hidden_layer_sizes=(100,), max_iter=300",0.9349,0.9352,246.5
+SVM,"C=10.0, gamma=scale, kernel=rbf",0.9328,0.9334,147.8
+SVM,"C=0.1, kernel=linear",0.9294,0.9296,0.6
+LR,C=1.0,0.9179,0.9184,2.9
+NB,alpha=0.1,0.9166,0.9173,0.0
+NB,alpha=1.0,0.9098,0.9102,0.0
+NB,alpha=5.0,0.884,0.8839,0.0
